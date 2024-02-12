@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "dev:tauri": "npm run tauri dev",
+    "build:tauri": "npm run tauri build",
     "start": "next start",
     "lint": "eslint ."
   },

@@ -5,6 +5,8 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite --port 3333 --open",
+    "dev:tauri": "npm run tauri dev",
+    "build:tauri": "npm run tauri build",
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
