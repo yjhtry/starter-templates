@@ -1,10 +1,4 @@
-import { useRef } from 'react'
-import { createFileRoute } from '@tanstack/react-router'
 import { EllipsisOutlined, PlusOutlined } from '@ant-design/icons'
-import type { ActionType, ProColumns } from '@ant-design/pro-components'
-import { ProTable } from '@ant-design/pro-components'
-import { Button, Dropdown } from 'antd'
-import sky from '../lib/sky'
 
 export async function waitTimePromise(time: number = 100) {
   return new Promise((resolve) => {
@@ -138,6 +132,12 @@ function Home() {
       dateFormatter="string"
       headerTitle="高级表格"
       toolBarRender={() => [
+        <Button
+          key="button"
+          type="primary"
+        >
+          <Link to="/about">About</Link>
+        </Button>,
         <Button
           key="button"
           icon={<PlusOutlined />}
