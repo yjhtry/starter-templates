@@ -1,7 +1,11 @@
 import { useState } from 'react'
-import './App.css'
+import { createFileRoute } from '@tanstack/react-router'
 
-function App() {
+export const Route = createFileRoute('/')({
+  component: Home,
+})
+
+function Home() {
   const [count, setCount] = useState(0)
 
   return (
@@ -24,5 +28,3 @@ function App() {
     </>
   )
 }
-
-export default App
