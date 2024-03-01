@@ -1,13 +1,14 @@
 {
   "name": "react-lib-starter",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "pnpm build && bumpp && pnpm publish --no-git-checks"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -23,6 +24,7 @@
     "@typescript-eslint/parser": "^7.0.2",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "@yelo/rollup-node-external": "^1.0.1",
+    "bumpp": "^9.3.0",
     "eslint": "^8.56.0",
     "eslint-plugin-format": "^0.1.0",
     "eslint-plugin-react": "^7.33.2",
